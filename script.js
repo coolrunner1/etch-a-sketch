@@ -33,7 +33,7 @@ const colorChange = (i) => {
         else if (state==1){
             pix.style.backgroundColor="#"+Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
         }
-        else if (state==2){
+        else {
             pix.style.backgroundColor="white";
         }
     }

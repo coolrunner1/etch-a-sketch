@@ -64,8 +64,8 @@ div {
 	padding: 0px;
 	border: solid;
 	border-color: #3882f6;
-	height: 1000px;
-	width: 1000px;
+	height: 480px;
+	width: 480px;
 	position: relative;
     z-index: 99;
 }
@@ -167,7 +167,11 @@ button {
 }*/
 
 .pixel {
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	background-color: brown;
+}
+
+.pixel:hover {
+	background-color: pink;
 }

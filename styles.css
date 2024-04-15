@@ -44,9 +44,9 @@ div {
 
 #middle {
 	display: flex;
-	flex-direction: column;
-	/*justify-content: space-between;*/
-	
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
 	height: 100%;
 	position: relative;
     z-index: 99;
@@ -54,6 +54,12 @@ div {
 	padding-right: 20%;
 	padding-left: 20%;
 	padding-bottom: 5%;
+}
+
+#buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 #container-with-box {
@@ -69,14 +75,6 @@ div {
 	width: 480px;
 	position: relative;
     z-index: 99;
-}
-
-#quote {
-	display: flex;
-	flex-direction: column;
-	background-color: #e5e7eb;
-	padding: 125px 20%;
-	gap: 10px;
 }
 
 #footer {
@@ -170,7 +168,7 @@ button {
 .pixels {
 	width: 30px;
 	height: 30px;
-	background-color: brown;
+	background-color: white;
 	user-drag: none;
     -webkit-user-drag: none;
     user-select: none;
@@ -181,4 +179,14 @@ button {
 
 .pixels:hover {
 	background-color: pink;
+}
+
+.ctl-buts {
+	display: block;
+	padding: 10px;
+	width: 100%;
+	max-width: 90px;
+	height: 100%;
+	max-height: 90px;
+	
 }

@@ -1,11 +1,30 @@
-let draw=false;
+let draw = false;
+let rainbow=false;
+let paint=false;
+let color = "black";
+const rainbowBut=document.getElementById("rainbowbut");
+rainbowBut.onclick=() => {
+    rainbow=true;
+    paint=false;
+}
+const paintBut=document.getElementById("paintbut");
+paintBut.onclick=() => {
+    rainbow=false;
+    paint=true;
+}
+
 
 const colorChange = (i) => {
     pix=document.getElementById("pixel"+i);
     pix.onmousedown=()=>draw=true;
     pix.onmouseup=()=>draw=false;
-    if (draw)
-        pix.style.backgroundColor="pink";
+    if (draw){
+        if (paint){
+            pix.style.backgroundColor="black";
+        }
+        if (rainbow)
+            pix.style.backgroundColor="#"+Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+    }
     console.log("you are gay x"+i);
 }
 

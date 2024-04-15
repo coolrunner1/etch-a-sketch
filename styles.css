@@ -31,6 +31,17 @@ div {
     z-index: 999;
 }
 
+#footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	width: 80%;
+	position: fixed;
+    z-index: 999;
+}
+
 #filler-top {
 	padding-top: 18px;
 	padding-bottom: 18px;
@@ -75,18 +86,6 @@ div {
 	width: 480px;
 	position: relative;
     z-index: 99;
-}
-
-#filler {
-	height: auto;
-	padding: 10% 0;
-}
-
-#footer {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	padding: 1% 0;
 }
 
 .hero-header {

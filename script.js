@@ -1,6 +1,16 @@
-const themeChange = () => {
-    
-    theme.backgroundcolor="black";
+let draw=false;
+
+const colorChange = (i) => {
+    pix=document.getElementById("pixel"+i);
+    pix.onmousedown=()=>draw=true;
+    pix.onmouseup=()=>draw=false;
+    if (draw)
+        pix.style.backgroundColor="pink";
+    console.log("you are gay x"+i);
+}
+
+const colorHover = (i) => {
+
 }
 
 const themebtn=document.querySelector("#theme");
@@ -28,6 +38,9 @@ themebtn.onclick = () => {
 grid=document.getElementById("container-with-box");
 for (let i=0; i<256; i++){
     const div = document.createElement("div");
-    div.classList.add( "pixel" );
+    div.classList.add( "pixels" );
+    div.id=("pixel"+i);
+    div.onpointerenter=() => colorChange(i);
+    //div.addEventListener('click', () => colorChange(i));
     grid.appendChild(div);
 }

@@ -24,3 +24,10 @@ themebtn.onclick = () => {
         divImg.style.backgroundImage = "url('https://www.svgrepo.com/show/79251/crescent-moon.svg')";
     }
 }
+
+grid=document.getElementById("container-with-box");
+for (let i=0; i<256; i++){
+    const div = document.createElement("div");
+    div.classList.add( "pixel" );
+    grid.appendChild(div);
+}

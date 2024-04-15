@@ -33,8 +33,11 @@ const colorChange = (i) => {
         else if (state==1){
             pix.style.backgroundColor="#"+Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
         }
-        else {
+        else if (state==2){
             pix.style.backgroundColor="white";
+        }
+        else {
+            console.log("Unknown error");
         }
     }
 }

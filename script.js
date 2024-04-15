@@ -26,7 +26,9 @@ const colorChange = (i) => {
     pix.onmouseup=()=>draw=false;
     if (draw){
         if (state==0){
-            pix.style.backgroundColor="black";
+            const colorElem=document.getElementById("myColor");
+            const color=colorElem.value;
+            pix.style.backgroundColor=color;
         }
         else if (state==1){
             pix.style.backgroundColor="#"+Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');

@@ -9,7 +9,7 @@ div {
     z-index: 99;
 }
 
-#header, #footer, #top {
+#header, #footer {
 	background-color: #1f2937;
 	color: #f9faf8;
 	display: flex;
@@ -53,7 +53,7 @@ div {
 	padding-top: 100px;
 	padding-right: 20%;
 	padding-left: 20%;
-	padding-bottom: 5%;
+	padding-bottom: 60px;
 }
 
 #buttons {
@@ -77,6 +77,11 @@ div {
     z-index: 99;
 }
 
+#filler {
+	height: auto;
+	padding: 10% 0;
+}
+
 #footer {
 	display: flex;
 	justify-content: center;
@@ -89,49 +94,23 @@ div {
 	font-size: 24px;
 }
 
-.hero-secondary .hero-secondary-but {
+.hero-secondary {
 	font-size: 18px;
 	color: #e5e7eb;
 }
 
-/*.hero-secondary-but:visited {
-	color: #e5e7eb;
-	text-decoration: none;
-}
-
-.hero-secondary-but:link {
-	color: #e5e7eb;
-	text-decoration: none;
-}
-
-.hero-secondary-but:hover {
-	color: #3882f6;
-	text-decoration: none;
-}*/
-
-button:hover {
+button:hover, input:hover {
 	background-color: #005ff7;
 	border-color: #005ff7;
 }
 
-/*.small-items {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 15px;
-	padding: 5px;
-	padding-left: 0;
-	padding-right: 0;
-}*/
-
-
 .hero {
 	font-family: extra-bold;
-	font-size: 48px;
+	font-size: 36px;
 }
 
 
-button {
+button, input {
 	display: flex;
 	justify-content: center;
 	padding: 10px 10px;
@@ -150,20 +129,6 @@ button {
 	margin: 0;
 	font-family: arial;
 }
-
-/*img {
-	width: 45%;
-	height: 45%;
-}*/
-
-
-/*.image-with-border {
-	border-style: solid;
-	border-color: #3882f6;
-	border-radius: 10px;
-	width: 100%;
-	height: 80%;
-}*/
 
 .pixels {
 	width: 30px;
@@ -188,5 +153,4 @@ button {
 	max-width: 90px;
 	height: 100%;
 	max-height: 90px;
-	
 }

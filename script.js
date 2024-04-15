@@ -1,31 +1,40 @@
 let draw = false;
-let rainbow=false;
-let paint=false;
-let color = "black";
-const rainbowBut=document.getElementById("rainbowbut");
-rainbowBut.onclick=() => {
-    rainbow=true;
-    paint=false;
-}
+let state=0;
 const paintBut=document.getElementById("paintbut");
 paintBut.onclick=() => {
-    rainbow=false;
-    paint=true;
+    state=0;
 }
-
+const rainbowBut=document.getElementById("rainbowbut");
+rainbowBut.onclick=() => {
+    state=1;
+}
+const eraseBut=document.getElementById("erasebut");
+eraseBut.onclick=() => {
+    state=2;
+}
+const clearBut=document.getElementById("clearbut");
+clearBut.onclick=() => {
+    for (let i=0; i<256; i++){
+        const div = document.getElementById("pixel"+i);
+        div.style.backgroundColor="white";
+    }
+}
 
 const colorChange = (i) => {
     pix=document.getElementById("pixel"+i);
     pix.onmousedown=()=>draw=true;
     pix.onmouseup=()=>draw=false;
     if (draw){
-        if (paint){
+        if (state==0){
             pix.style.backgroundColor="black";
         }
-        if (rainbow)
+        else if (state==1){
             pix.style.backgroundColor="#"+Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+        }
+        else if (state==2){
+            pix.style.backgroundColor="white";
+        }
     }
-    console.log("you are gay x"+i);
 }
 
 

@@ -61,7 +61,8 @@ div {
 	flex-direction: row;
 	flex-wrap: wrap;
 	background-color: #f9faf8;
-	padding: 0px;
+	padding: 0;
+	margin: 0;
 	border: solid;
 	border-color: #3882f6;
 	height: 480px;

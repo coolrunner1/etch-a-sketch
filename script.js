@@ -9,9 +9,6 @@ const colorChange = (i) => {
     console.log("you are gay x"+i);
 }
 
-const colorHover = (i) => {
-
-}
 
 const themebtn=document.querySelector("#theme");
 const divImg = document.createElement("div");
@@ -41,6 +38,5 @@ for (let i=0; i<256; i++){
     div.classList.add( "pixels" );
     div.id=("pixel"+i);
     div.onpointerenter=() => colorChange(i);
-    //div.addEventListener('click', () => colorChange(i));
     grid.appendChild(div);
 }

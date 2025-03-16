@@ -5,28 +5,28 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Me">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My etch-a-scetch</title>
+        <title>My etch-a-sketch</title>
         <link rel="stylesheet" href="./styles.css">
         <script src="script.js" defer></script>
     </head>
     <body>
         <div id="header">
-            <div class="hero">Etch-a-Scetch</div>
+            <div class="hero">Etch-a-Sketch</div>
             <button id="theme"></button>
         </div>
         <div id="filler-top"></div>
         <div id="middle">
-            <div id="buttons">
-                <button class="ctl-buts" id="paintbut">Paint</button>
-                <button class="ctl-buts" id="rainbowbut">Rainbow</button>
-                <button class="ctl-buts" id="erasebut">Erase</button>
-                <button class="ctl-buts" id="clearbut">Clear</button>
-                <button class="ctl-buts"><input class="ctl-buts" type="color" id="myColor" value="black"></button>
+            <div id="buttons-container">
+                <button class="ctl-buts" id="paint-but">Paint</button>
+                <button class="ctl-buts" id="rainbow-but">Rainbow</button>
+                <button class="ctl-buts" id="erase-but">Erase</button>
+                <button class="ctl-buts" id="clear-but">Clear</button>
+                <input type="color" id="color-but" class="ctl-buts" value="black" />
             </div>
             <div id="container-with-box"></div>
         </div>
         <div id="footer">
-            <div class="hero-secondary" class="foot-text">Copyleft coolrunner1 2024</div>
+            <div class="hero-secondary foot-text">Copyleft coolrunner1 2024</div>
         </div>
     </body>
 </html>
